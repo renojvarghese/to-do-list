@@ -5,9 +5,9 @@ export class ListItem extends Component {
     render() {
 
         return (
-            <li key={this.props.key}
+            <li
             className={this.props.className}
-            finished={this.props.finished}>
+            finished={this.props.finished.toString()}>
 
                 {this.props.children}
 

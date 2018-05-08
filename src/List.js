@@ -10,7 +10,7 @@ export class List extends Component {
     }
     get list() {
         return this.state.items.map( (item, i) => {
-            return <ListItem key={"item_" + i} className="item">{item}</ListItem>
+            return <ListItem key={"item_" + i} className="item" finished={false}>{item}</ListItem>
         })
     }
     handleSubmit() {
