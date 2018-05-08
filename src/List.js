@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { ListItem } from './ListItem';
 export class List extends Component {
     constructor(props) {
         super(props);
@@ -10,20 +10,21 @@ export class List extends Component {
     }
     get list() {
         return this.state.items.map( (item, i) => {
-            return <li key={"item_" + i} className="item">{item}</li>
+            return <ListItem key={"item_" + i} className="item">{item}</ListItem>
         })
     }
     handleSubmit() {
         let inputElem = document.getElementById("text-input");
         let newItem = inputElem.value;
 
-        console.log(newItem);
-        this.state.items.push(newItem);
-        this.setState({
-            items: this.state.items
-        });
+        if (newItem) {
+            this.state.items.push(newItem);
+            this.setState({
+                items: this.state.items
+            });
 
-        inputElem.value = "";
+            inputElem.value = "";
+        }
 
 
     }
