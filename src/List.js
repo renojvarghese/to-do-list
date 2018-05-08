@@ -29,7 +29,7 @@ export class List extends Component {
     }
     render() {
         return (
-            <div className="container">
+            <div className="list-container">
                 <ul className="item-list">
                     {this.list}
                 </ul>
