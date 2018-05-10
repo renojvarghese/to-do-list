@@ -2,18 +2,47 @@ import React, { Component } from 'react';
 
 
 export class ListItem extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            finished: false,
+            finishedClass: " finished"
+        }
+        this.handleClick = this.handleClick.bind(this);
+    }
+    handleClick() {
+        // console.log("HELLO?")
+        // if (!this.state.finished) {
+            this.setState ({
+                finished: true
+            });
+        // }
+    }
     render() {
+        if (this.state.finished) {
+            return (
+                <li
+                className={this.props.className + this.state.finishedClass}
+                finished={this.props.finished.toString()}>
+                    <input type="checkbox" onClick={this.handleClick}/>
+                    {this.props.children}
 
-        return (
-            <li
-            className={this.props.className}
-            finished={this.props.finished.toString()}>
+                </li>
 
-                {this.props.children}
+            )
+        }
+        else {
+            return (
+                <li
+                className={this.props.className}
+                finished={this.props.finished.toString()}>
+                    <input type="checkbox" onClick={this.handleClick}/>
+                    {this.props.children}
 
-            </li>
+                </li>
 
-        )
+            )
+        }
 
     }
 }
