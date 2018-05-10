@@ -11,12 +11,12 @@ export class ListItem extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
     handleClick() {
-        // console.log("HELLO?")
-        // if (!this.state.finished) {
+
             this.setState ({
-                finished: true
+                finished: !this.state.finished
             });
-        // }
+
+
     }
     render() {
         if (this.state.finished) {

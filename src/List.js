@@ -4,7 +4,7 @@ export class List extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            items : []
+            items : ["hello"]
         }
         this.handleSubmit = this.handleSubmit.bind(this);
     }

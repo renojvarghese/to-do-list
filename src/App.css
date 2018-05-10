@@ -1,5 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Open+Sans');
+
+.finished, input {
+    transition: all .4s ease;
+}
 .finished {
     color: green;
     opacity: .8;
-    transition: all .4s ease;
+
+}
+input[type=checkbox] {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    position:relative;
+}
+
+input[type=checkbox]::before{
+    content:"";
+    display: inline-block;
+    width:100%;
+    height:100%;
+    border-radius: 100%;
+    background: #333333;
+
+}
+input[type=checkbox]::after{
+    content:"";
+    display: inline-block;
+    position: absolute;
+    left:10%;
+    top:20%;
+    width:100%;
+    height:100%;
+    background: url('img/check.svg') no-repeat;
+}
+
+input[type=checkbox]:checked:before {
+    background: #eeeeee;
 }
