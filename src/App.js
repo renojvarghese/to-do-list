@@ -10,8 +10,7 @@ class App extends Component {
         return (
           <div className="App">
             <div className="header">
-                <h1 className="header-title">My ToDo List App</h1>
-                <h3>Please enter to-list items</h3>
+                <h1 className="header-title">The Simplest to-do app ever</h1>
             </div>
 
             <List/>

@@ -31,11 +31,14 @@ export class List extends Component {
     render() {
         return (
             <div className="list-container">
+                <div className="input-container">
+                    <input type="text" id="text-input" placeholder="What do you have to do?"/>
+                    <label className="submit" onClick={this.handleSubmit}>Add to List</label>
+                </div>
                 <ul className="item-list">
                     {this.list}
                 </ul>
-                <input type="text" id="text-input"/>
-                <button className="submit-btn" onClick={this.handleSubmit}>Submit</button>
+
             </div>
         );
     }
