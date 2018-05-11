@@ -5,7 +5,7 @@ export class List extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            items : ["hello"]
+            items : []
         }
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleRemove = this.handleRemove.bind(this);
@@ -33,7 +33,6 @@ export class List extends Component {
     handleRemove(item) {
         let index = this.state.items.indexOf(item)
         this.state.items.splice(index,1);
-        console.log(this.state.items);
         this.setState({
             items: this.state.items
         });

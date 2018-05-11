@@ -4,10 +4,10 @@
     padding: 75px 0px;
     text-align: center;
     vertical-align: middle;
-    background: rgb(126,19,163); /* Old browsers */
-    background: -moz-linear-gradient(45deg, rgba(126,19,163,1) 0%, rgba(242,155,14,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(126,19,163,1) 0%,rgba(242,155,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, rgba(126,19,163,1) 0%,rgba(242,155,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: rgb(126,19,163);
+    background: -moz-linear-gradient(45deg, rgba(126,19,163,1) 0%, rgba(242,155,14,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(126,19,163,1) 0%,rgba(242,155,14,1) 100%);
+    background: linear-gradient(45deg, rgba(126,19,163,1) 0%,rgba(242,155,14,1) 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e13a3', endColorstr='#f29b0e',GradientType=1 );
 }
 .header-title {
@@ -87,37 +87,7 @@ input[type=checkbox] {
 .item-text{
     padding-left:25px;
 }
-@keyframes disappear {
-    0%{
-        margin-top:0;
-        opacity:1;
-        display: block;
 
-    }
-    99% {
-        margin-top:-25px;
-        opacity: 0;
-        padding:0;
-        margin-bottom: 0;
-        display: block;
-    }
-    100% {
-        margin-top:-25px;
-        opacity: 0;
-        padding:0;
-        margin-bottom: 0;
-        display: none;
-    }
-}
-/* input[type=checkbox]::before{
-    content:"";
-    display: inline-block;
-    width:100%;
-    height:100%;
-    border-radius: 100%;
-    background: #333333;
-
-} */
 input[type=checkbox]::after{
     content:"";
     display: inline-block;
