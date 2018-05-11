@@ -53,7 +53,7 @@
 .item-list {
     list-style: none;
     padding: 0;
-    margin-top:100px;
+    margin-top:150px;
     width: 100%;
 }
 .item {
@@ -77,9 +77,8 @@
 input[type=checkbox] {
 
     appearance: none;
-    width: 20px;
-    height: 20px;
-    background: green;
+    width: 40px;
+    height: 40px;
     position:relative;
     outline: none;
     vertical-align: middle;
@@ -119,20 +118,17 @@ input[type=checkbox] {
     background: #333333;
 
 } */
-/* input[type=checkbox]::after{
+input[type=checkbox]::after{
     content:"";
     display: inline-block;
     position: absolute;
-    left:10%;
-    top:20%;
+    left:-25%;
+    top:-25%;
     width:100%;
     height:100%;
-    background: url('img/check-gray.svg') no-repeat;
+    background: url('img/check-circle.svg') no-repeat;
+    background-size: 100%;
 }
 input[type=checkbox]:checked {
     outline: none;
 }
-
-input[type=checkbox]:checked:after{
-    background: url('img/check.svg') no-repeat;
-}  */
