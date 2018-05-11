@@ -32,7 +32,9 @@ export class List extends Component {
 
     }
     handleRemove(item) {
-        this.state.items.remove(newItem);
+        let index = this.state.items.indexOf(item)
+        this.state.items.splice(index,1);
+        console.log(this.state.items);
         this.setState({
             items: this.state.items
         });

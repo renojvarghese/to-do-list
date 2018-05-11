@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 
 
 export class ListItem extends Component {
-    // constructor(props) {
-    //     super(props);
+    constructor(props) {
+        super(props);
     //     this.state = {
     //         finished: false,
     //         finishedClass: " finished"
     //     }
-    //     this.handleClick = this.handleClick.bind(this);
-    // }
+        this.handleClick = this.handleClick.bind(this);
+    }
     // handleClick() {
     //
     //         this.setState ({
@@ -20,8 +20,6 @@ export class ListItem extends Component {
     // }
     handleClick() {
         this.props.onRemove(this.props.text);
-
-
     }
     render() {
         // if (this.state.finished) {
