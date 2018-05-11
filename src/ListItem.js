@@ -25,7 +25,7 @@ export class ListItem extends Component {
                 className={this.props.className + this.state.finishedClass}
                 finished={this.props.finished.toString()}>
                     <input type="checkbox" onClick={this.handleClick}/>
-                    {this.props.children}
+                    <div className="item-text">{this.props.children}</div>
 
                 </li>
 
@@ -37,7 +37,7 @@ export class ListItem extends Component {
                 className={this.props.className}
                 finished={this.props.finished.toString()}>
                     <input type="checkbox" onClick={this.handleClick}/>
-                    {this.props.children}
+                    <div className="item-text">{this.props.children}</div>
 
                 </li>
 

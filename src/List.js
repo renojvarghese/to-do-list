@@ -15,7 +15,7 @@ export class List extends Component {
     }
     handleSubmit() {
         let inputElem = document.getElementById("text-input");
-        let newItem = inputElem.value;
+        let newItem = inputElem.value.trim();
 
         if (newItem) {
             this.state.items.push(newItem);
