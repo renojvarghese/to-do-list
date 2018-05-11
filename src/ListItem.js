@@ -40,7 +40,7 @@ export class ListItem extends Component {
             return (
                 <li
                 className={this.props.className}
-                finished={this.props.finished.toString()}>
+                >
                     <div className="input-container">
                         <input type="checkbox" onClick={this.handleClick}/>
                     </div>

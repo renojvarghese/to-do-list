@@ -68,20 +68,12 @@
     margin-bottom: 15px;
 
 }
-.item, .finished, input {
-    transition: all .4s ease;
-}
-.finished {
-    color: green;
 
-    margin-top: -50px;
-    opacity: 0;
-    /* animation: disappear .4s ease forwards .1s; */
-}
 .input-container {
     height:100%;
     float:left;
 }
+
 input[type=checkbox] {
 
     appearance: none;

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { ListItem } from './ListItem';
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
 export class List extends Component {
     constructor(props) {
@@ -13,7 +12,7 @@ export class List extends Component {
     }
     get list() {
         return this.state.items.map( (item, i) => {
-            return <ListItem key={"item_" + i} className="item" finished={false} onRemove={this.handleRemove} text={item}></ListItem>
+            return <ListItem  key={"item_" + i} className="item" onRemove={this.handleRemove} text={item}></ListItem>
         })
     }
     handleSubmit() {
